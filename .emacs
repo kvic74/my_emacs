@@ -1,3 +1,4 @@
+;;; git https://github.com/kvic74/my_emacs
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")))

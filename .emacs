@@ -304,7 +304,19 @@ by using nxml's indentation rules."
 ; Don't forget to start it!
 (newsticker-start)
 
+;; epub mode
+;; http://inasmuch.as/2011/04/06/opening-epub-in-emacs/
 
+(setq auto-mode-alist
+ (append
+ (list
+ '("\\.epub$" . archive-mode))
+ auto-mode-alist))
+(setq auto-coding-alist
+ (append
+ (list
+ '("\\.epub$" . no-conversion))
+ auto-coding-alist))
 
 
 

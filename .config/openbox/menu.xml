@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" label="Терминал">
+			<action name="Execute">
+				<execute>x-terminal-emulator</execute>
+			</action>
+		</item>
+		<item label="Веб браузер">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="Калькулятор">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<menu id="root-menu-142847" label="Файловый менеджер">
+			<item label="Rox-filer">
+				<action name="Execute">
+					<execute>rox</execute>
+				</action>
+			</item>
+			<item label="SpaceFM">
+				<action name="Execute">
+					<execute>spacefm</execute>
+				</action>
+			</item>
+			<item label="PCmanFM">
+				<action name="Execute">
+					<execute>pcmanfm</execute>
+				</action>
+			</item>
+			<item label="X File Explorer">
+				<action name="Execute">
+					<execute>xfe</execute>
+				</action>
+			</item>
+			<item label="Midnight Commander">
+				<action name="Execute">
+					<execute>urxvt -e mc</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-73047" label="Интернет">
+			<item label="Conkeror">
+				<action name="Execute">
+					<execute>conkeror</execute>
+				</action>
+			</item>
+			<item label="Chromium">
+				<action name="Execute">
+					<execute>chromium</execute>
+				</action>
+			</item>
+			<item label="Iceweasel">
+				<action name="Execute">
+					<execute>iceweasel</execute>
+				</action>
+			</item>
+			<item label="Midori">
+				<action name="Execute">
+					<execute>midori</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Xchat">
+				<action name="Execute">
+					<execute>xchat</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-87930" label="Текстовые редакторы">
+			<item label="emacs">
+				<action name="Execute">
+					<execute>emacs</execute>
+				</action>
+			</item>
+			<item label="emacs-snapshot">
+				<action name="Execute">
+					<execute>/usr/bin/emacs-snapshot</execute>
+				</action>
+			</item>
+			<item label="emacs-snapshot-x">
+				<action name="Execute">
+					<execute>/usr/bin/emacs-snapshot-x</execute>
+				</action>
+			</item>
+			<item label="emacs-snapshot-gtk">
+				<action name="Execute">
+					<execute>/usr/bin/emacs-snapshot-gtk</execute>
+				</action>
+			</item>
+			<item label="GVim">
+				<action name="Execute">
+					<execute>gvim</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-713640" label="Мультимедиа">
+			<item label="Smplayer">
+				<action name="Execute">
+					<execute>/usr/bin/smplayer</execute>
+				</action>
+			</item>
+			<item label="Smplayer2">
+				<action name="Execute">
+					<execute>/usr/bin/smplayer2</execute>
+				</action>
+			</item>
+			<item label="vlc">
+				<action name="Execute">
+					<execute>/usr/bin/vlc</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="ario">
+				<action name="Execute">
+					<execute>ario</execute>
+				</action>
+			</item>
+			<item label="gbemol">
+				<action name="Execute">
+					<execute>gbemol</execute>
+				</action>
+			</item>
+			<item label="gimmix">
+				<action name="Execute">
+					<execute>gimmix</execute>
+				</action>
+			</item>
+			<item label="glurp">
+				<action name="Execute">
+					<execute>glurp</execute>
+				</action>
+			</item>
+			<item label="sonata">
+				<action name="Execute">
+					<execute>sonata</execute>
+				</action>
+			</item>
+			<item label="moc">
+				<action name="Execute">
+					<execute>urxvt -e mocp</execute>
+				</action>
+			</item>
+			<item label="ncmpcpp">
+				<action name="Execute">
+					<execute>urxvt -e ncmpcpp</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="audacious">
+				<action name="Execute">
+					<execute>audacious</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="audacity">
+				<action name="Execute">
+					<execute>audacity</execute>
+				</action>
+			</item>
+			<item label="easytag">
+				<action name="Execute">
+					<execute>easytag</execute>
+				</action>
+			</item>
+			<item label="id3ren">
+				<action name="Execute">
+					<execute>id3ren</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-63720" label="Программирование">
+			<item label="Geany">
+				<action name="Execute">
+					<execute>geany</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="client-list-menu"/>
+		<separator/>
+		<menu id="/Debian"/>
+		<separator/>
+		<menu id="root-menu-831924" label="Виртуализация">
+			<item label="VirtualBox">
+				<action name="Execute">
+					<execute>/usr/bin/virtualbox</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-391127" label="Системное">
+			<menu id="root-menu-391127-225622" label="Security">
+				<item label="pyrite (GnuPG)">
+					<action name="Execute">
+						<execute>pyrite</execute>
+					</action>
+				</item>
+				<item label="gpa (GnuGP)">
+					<action name="Execute">
+						<execute>gpa</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Диспетчер задач (lxtask)">
+				<action name="Execute">
+					<execute>lxtask</execute>
+				</action>
+			</item>
+			<item label="Диспетчер задач (htop)">
+				<action name="Execute">
+					<execute>urxvt -e htop</execute>
+				</action>
+			</item>
+			<item label="Настройка дисплея">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-43332" label="Настройка openbox">
+			<item label="ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Настройка tint2">
+				<action name="Execute">
+					<execute>~/bin/tintwizard.py</execute>
+				</action>
+			</item>
+			<item label="Темы tint2">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Настройка внешнего вида">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Завершить">
+			<action name="Execute">
+				<execute>/home/vik/bin/oblogout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

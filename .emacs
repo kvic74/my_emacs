@@ -320,7 +320,7 @@ by using nxml's indentation rules."
 
 ;; magit
 (setq magit-auto-revert-mode nil)
-
+(setq magit-last-seen-setup-instructions "1.4.0")
 
 
 

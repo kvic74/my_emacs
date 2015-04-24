@@ -318,6 +318,9 @@ by using nxml's indentation rules."
  '("\\.epub$" . no-conversion))
  auto-coding-alist))
 
+;; magit
+(setq magit-auto-revert-mode nil)
+
 
 
 

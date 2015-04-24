@@ -318,13 +318,11 @@ by using nxml's indentation rules."
  '("\\.epub$" . no-conversion))
  auto-coding-alist))
 
-;; magit
+;; magit git
+
+
+;;(add-to-list 'load-path "~/.emacs.d/site-lisp/magit/")
+;;(defvar magit-emacsclient-executable nil) ; suppress attempt to set default value
+;;(require 'magit)
 (setq magit-auto-revert-mode nil)
 (setq magit-last-seen-setup-instructions "1.4.0")
-
-
-
-
-
-
-

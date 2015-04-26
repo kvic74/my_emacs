@@ -6,6 +6,15 @@
 ; initialize package.el
 (package-initialize)
 
+;; Настройка отображения времени
+(setq display-time-day-and-date t ; display day and date
+      display-time-24hr-format t ; use 24hr format
+      display-time-interval 10 ; redisplay every ten seconds
+      display-time-default-load-average nil) ; don't display the system load average
+(display-time)
+(display-battery-mode 1)
+
+
 ;; Парные скобки
 (setq show-paren-style 'expression)
 (show-paren-mode 2)

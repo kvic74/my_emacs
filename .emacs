@@ -117,7 +117,7 @@ version 2014-10-28"
       (if progName
           (progn
             (message "Running…")
-            (shell-command ξcmdStr "*xah-run-current-file output*" ))
+            (shell-command cmdStr "*xah-run-current-file output*" ))
         (message "No recognized program file suffix for this file.")))))
 (global-set-key (kbd "<f8>") 'xah-run-current-file)
 
@@ -201,6 +201,10 @@ version 2014-10-28"
 (global-set-key [(f5)] 'gdb)
 
 
+;; cppref
+(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-cppref/")
+(require 'cppref)
+
 ;; python
 
 (elpy-enable)
@@ -260,8 +264,8 @@ by using nxml's indentation rules."
 (require 'newsticker)
 
 ; W3M HTML renderer isn't essential, but it's pretty useful.
-(require 'w3m)
-(setq newsticker-html-renderer 'w3m-region)
+;;(require 'w3m)
+;;(setq newsticker-html-renderer 'w3m-region)
 
 ; We want our feeds pulled every 10 minutes.
 (setq newsticker-retrieval-interval 600)
@@ -335,3 +339,9 @@ by using nxml's indentation rules."
 ;;(require 'magit)
 (setq magit-auto-revert-mode nil)
 (setq magit-last-seen-setup-instructions "1.4.0")
+
+;; nyan-mode
+(require 'nyan-mode)
+;;(setq-default nyan-wavy-trail t)
+(nyan-mode 1)
+(nyan-start-animation)

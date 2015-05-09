@@ -362,5 +362,6 @@ by using nxml's indentation rules."
 (autoload 'auto-make-header "header2")
 (add-hook 'emacs-lisp-mode-hook 'auto-make-header)
 (add-hook 'c-mode-common-hook 'auto-make-header)
+;; add new hook
 (add-hook 'sh-mode-hook 'auto-make-header)
 (add-hook 'python-mode-hook 'auto-make-header)

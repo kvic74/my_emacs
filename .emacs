@@ -369,3 +369,8 @@ by using nxml's indentation rules."
 
 ;; projectile
 (projectile-global-mode)
+
+;; org-mode
+(add-hook 'org-mode-hook
+  (lambda ()
+    (define-key org-mode-map "\M-q" 'toggle-truncate-lines)))

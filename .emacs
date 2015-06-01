@@ -162,7 +162,7 @@ version 2014-10-28"
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 ; turn on ede mode
 (global-ede-mode 1)
-; create a project for our program.
+					; create a project for our program.
 (ede-cpp-root-project "my project" :file "~/Documents/Projects/c++/main.cpp"
 		      :include-path '("/../inc"))
 ; you can use system-include-path for setting up the system header file locations.
@@ -261,61 +261,61 @@ by using nxml's indentation rules."
 
 
 ;; newsticker
-(require 'newsticker)
+;; (require 'newsticker)
 
 ; W3M HTML renderer isn't essential, but it's pretty useful.
 ;;(require 'w3m)
 ;;(setq newsticker-html-renderer 'w3m-region)
 
 ; We want our feeds pulled every 10 minutes.
-(setq newsticker-retrieval-interval 600)
+;; (setq newsticker-retrieval-interval 600)
 
 ; Setup the feeds. We'll have a look at these in just a second.
-(setq newsticker-url-list-defaults nil)
-(setq newsticker-url-list '("..."))
+;; (setq newsticker-url-list-defaults nil)
+;; (setq newsticker-url-list '("..."))
 
 ; Optionally bind a shortcut for your new RSS reader.
-(global-set-key (kbd "C-c r") 'newsticker-treeview)
+;; (global-set-key (kbd "C-c r") 'newsticker-treeview)
 
-(setq newsticker-url-list '(
-                       ("emacs-fu" "http://emacs-fu.blogspot.com/feeds/posts/default" nil nil nil)
-                       ("abandonia" "http://www.abandonia.com/en/rss.xml" nil nil nil)
-                       ("arch linux" "https://www.archlinux.org/feeds/news/" nil nil nil)
-                       ("Planet Emacsen" "http://planet.emacsen.org/atom.xml" nil nil nil)
-                       ("slashdot" "http://rss.slashdot.org/Slashdot/slashdot" nil nil nil)
-                       ("Jävligt gott" "http://www.javligtgott.se/feed/" nil nil nil)
-                       ("Kmandla" "http://kmandla.wordpress.com/feed/" nil nil nil)
-                       ("mojäng" "http://www.mojang.com/feed" nil nil nil)
-                       ("SMBC" "http://www.smbc-comics.com/rss.php" nil nil nil)
-                       ("xkcd" "https://www.xkcd.com/rss.xml" nil nil nil)
-                       ("laserbrain" "http://laserbrainstudios.com/feed/" nil nil nil)
-                       ;;("imdb" "http://rss.imdb.com/daily/poll" nil nil nil)
-                       ("rotten" "https://www.rottentomatoes.com/syndication/rss/top_news.xml" nil nil nil)
-                       ;;("BBC World" "http://feeds.bbci.co.uk/news/world/rss.xml" nil nil nil)
-                       ("BBC Sci" "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml" nil nil nil)
-                       ;;("Coursera" "http://blog.coursera.org/rss" nil nil nil)
-                       ;;("stallman" "http://www.stallman.org/rss/rss.xml" nil nil nil)
-                       ("emacs rocks" "http://emacsrocks.com/atom.xml" nil nil nil)
-                       ("endlessparentheses" "http://endlessparentheses.com/atom.xml" nil nil nil)
-                       ;;("blabbermouth" "http://feeds.feedburner.com/blabbermouth" nil nil nil)
-                       ("sds" "http://www.sydsvenskan.se/rss.xml" nil nil nil)
-                       ("di" "http://di.se/rss" nil nil nil)
-                       ("affärsvärlden" "http://www.affarsvarlden.se/?service=rss" nil nil nil)
-                       ("börspodden" "http://borspodden.se/feed/" nil nil nil)
-                       ("veckans aktie" "http://feeds.soundcloud.com/users/soundcloud:users:2000425/sounds.rss" nil nil nil)
-                       ("dividend mantra" "http://feeds.feedburner.com/DividendMantra/" nil nil nil)
-                       ("avpixlat" "http://avpixlat.info/feed/" nil nil nil)
-                       ;;("recepten" "http://www.recepten.se/feed/blog_rss2.xhtml" nil nil nil)
-                       ;;("Hacker News" "http://news.ycombinator.com/rss" nil nil nil)
-                       ("veckans aktie" "http://feeds.soundcloud.com/users/soundcloud:users:2000425/sounds.rss" nil nil nil)
-                       ("screen junkies" "http://www.youtube.com/rss/user/screenjunkies/feed.rss" nil nil nil)
-                       ("Matte Northice" "http://www.youtube.com/rss/user/gurskit8/feed.rss" nil nil nil)
-                       ("failarmy" "http://www.youtube.com/rss/user/failarmy/feed.rss" nil nil nil)
- 		       ("planet emacsen ru" "http://planet.emacsen.org/ru/atom.xml" nil nil nil)
-                       ))
+;; (setq newsticker-url-list '(
+;;                        ("emacs-fu" "http://emacs-fu.blogspot.com/feeds/posts/default" nil nil nil)
+;;                        ("abandonia" "http://www.abandonia.com/en/rss.xml" nil nil nil)
+;;                        ("arch linux" "https://www.archlinux.org/feeds/news/" nil nil nil)
+;;                        ("Planet Emacsen" "http://planet.emacsen.org/atom.xml" nil nil nil)
+;;                        ("slashdot" "http://rss.slashdot.org/Slashdot/slashdot" nil nil nil)
+;;                        ("Jävligt gott" "http://www.javligtgott.se/feed/" nil nil nil)
+;;                        ("Kmandla" "http://kmandla.wordpress.com/feed/" nil nil nil)
+;;                        ("mojäng" "http://www.mojang.com/feed" nil nil nil)
+;;                        ("SMBC" "http://www.smbc-comics.com/rss.php" nil nil nil)
+;;                        ("xkcd" "https://www.xkcd.com/rss.xml" nil nil nil)
+;;                        ("laserbrain" "http://laserbrainstudios.com/feed/" nil nil nil)
+;;                        ;;("imdb" "http://rss.imdb.com/daily/poll" nil nil nil)
+;;                        ("rotten" "https://www.rottentomatoes.com/syndication/rss/top_news.xml" nil nil nil)
+;;                        ;;("BBC World" "http://feeds.bbci.co.uk/news/world/rss.xml" nil nil nil)
+;;                        ("BBC Sci" "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml" nil nil nil)
+;;                        ;;("Coursera" "http://blog.coursera.org/rss" nil nil nil)
+;;                        ;;("stallman" "http://www.stallman.org/rss/rss.xml" nil nil nil)
+;;                        ("emacs rocks" "http://emacsrocks.com/atom.xml" nil nil nil)
+;;                        ("endlessparentheses" "http://endlessparentheses.com/atom.xml" nil nil nil)
+;;                        ;;("blabbermouth" "http://feeds.feedburner.com/blabbermouth" nil nil nil)
+;;                        ("sds" "http://www.sydsvenskan.se/rss.xml" nil nil nil)
+;;                        ("di" "http://di.se/rss" nil nil nil)
+;;                        ("affärsvärlden" "http://www.affarsvarlden.se/?service=rss" nil nil nil)
+;;                        ("börspodden" "http://borspodden.se/feed/" nil nil nil)
+;;                        ("veckans aktie" "http://feeds.soundcloud.com/users/soundcloud:users:2000425/sounds.rss" nil nil nil)
+;;                        ("dividend mantra" "http://feeds.feedburner.com/DividendMantra/" nil nil nil)
+;;                        ("avpixlat" "http://avpixlat.info/feed/" nil nil nil)
+;;                        ;;("recepten" "http://www.recepten.se/feed/blog_rss2.xhtml" nil nil nil)
+;;                        ;;("Hacker News" "http://news.ycombinator.com/rss" nil nil nil)
+;;                        ("veckans aktie" "http://feeds.soundcloud.com/users/soundcloud:users:2000425/sounds.rss" nil nil nil)
+;;                        ("screen junkies" "http://www.youtube.com/rss/user/screenjunkies/feed.rss" nil nil nil)
+;;                        ("Matte Northice" "http://www.youtube.com/rss/user/gurskit8/feed.rss" nil nil nil)
+;;                        ("failarmy" "http://www.youtube.com/rss/user/failarmy/feed.rss" nil nil nil)
+;;  		       ("planet emacsen ru" "http://planet.emacsen.org/ru/atom.xml" nil nil nil)
+;;                        ))
 
-; Don't forget to start it!
-(newsticker-start)
+;; ; Don't forget to start it!
+;; (newsticker-start)
 
 ;; epub mode
 ;; http://inasmuch.as/2011/04/06/opening-epub-in-emacs/
@@ -366,3 +366,6 @@ by using nxml's indentation rules."
 
 (add-hook 'sh-mode-hook 'auto-make-header)
 (add-hook 'python-mode-hook 'auto-make-header)
+
+;; projectile
+(projectile-global-mode)
